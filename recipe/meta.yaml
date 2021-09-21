@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clock/clock_{{ version }}.tar.gz
-  sha256: d15d07e1552ad423eaa59b594fb4c2e8b1bdda794db12b33866c9ca31cbf8632
+  sha256: 6430917f2fbca294488d5887b3355057c3fc9531da38d1eb43b3b749966672a1
 
 build:
   merge_build_host: true  # [win]
