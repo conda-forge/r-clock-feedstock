@@ -33,18 +33,18 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cpp11 >=0.2.7
+    - r-cpp11 >=0.4.0
     - r-ellipsis >=0.3.1
     - r-rlang >=0.4.10
-    - r-tzdb >=0.1.1
+    - r-tzdb >=0.2.0
     - r-vctrs >=0.3.7
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
-    - r-cpp11 >=0.2.7
+    - r-cpp11 >=0.4.0
     - r-ellipsis >=0.3.1
     - r-rlang >=0.4.10
-    - r-tzdb >=0.1.1
+    - r-tzdb >=0.2.0
     - r-vctrs >=0.3.7
 
 test:
