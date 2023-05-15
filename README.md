@@ -1,11 +1,22 @@
+About r-clock-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-clock-feedstock/blob/main/LICENSE.txt)
+
 About r-clock
-=============
+-------------
 
 Home: https://clock.r-lib.org, https://github.com/r-lib/clock
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-clock-feedstock/blob/main/LICENSE.txt)
+Summary: Provides a comprehensive library for date-time manipulations using a new family of orthogonal date-time classes (durations, time points, zoned-times, and calendars) that partition responsibilities so that the complexities of time zones are only considered when they are really needed. Capabilities include: date-time parsing, formatting, arithmetic, extraction and updating of components, and rounding.
+About r-clock
+-------------
+
+Home: https://clock.r-lib.org, https://github.com/r-lib/clock
+
+Package license: MIT
 
 Summary: Provides a comprehensive library for date-time manipulations using a new family of orthogonal date-time classes (durations, time points, zoned-times, and calendars) that partition responsibilities so that the complexities of time zones are only considered when they are really needed. Capabilities include: date-time parsing, formatting, arithmetic, extraction and updating of components, and rounding.
 
