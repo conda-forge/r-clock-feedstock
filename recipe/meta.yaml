@@ -11,6 +11,8 @@ source:
     - {{ cran_mirror }}/src/contrib/clock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clock/clock_{{ version }}.tar.gz
   sha256: 54e57a3b3f8c308d67536e2a75d48f3493cf7fe821bfa4da9159b4fb2ceca874
+  patches:
+    - patches/0001-tolerate-old-osx-sdk.patch
 
 build:
   merge_build_host: true  # [win]
