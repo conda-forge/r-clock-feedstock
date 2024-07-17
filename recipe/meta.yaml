@@ -1,6 +1,5 @@
 {% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-clock
@@ -13,8 +12,7 @@ source:
   sha256: 54e57a3b3f8c308d67536e2a75d48f3493cf7fe821bfa4da9159b4fb2ceca874
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -28,7 +26,9 @@ requirements:
     - r-cpp11                      # [build_platform != target_platform]
     - r-vctrs                      # [build_platform != target_platform]
     - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
     - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
     - {{ compiler('cxx') }}        # [not win]
     - {{ compiler('m2w64_cxx') }}  # [win]
     - {{ posix }}filesystem        # [win]
@@ -46,7 +46,6 @@ requirements:
     - r-vctrs >=0.3.7
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-cpp11 >=0.4.0
     - r-ellipsis >=0.3.1
     - r-rlang >=0.4.10
