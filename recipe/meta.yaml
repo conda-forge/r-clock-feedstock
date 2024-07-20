@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/clock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/clock/clock_{{ version }}.tar.gz
-  sha256: 54e57a3b3f8c308d67536e2a75d48f3493cf7fe821bfa4da9159b4fb2ceca874
+  sha256: 432d2fc39d3f20e348f09a9b6136a02a588db585bab428d184da71bf6aa1f0d8
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
